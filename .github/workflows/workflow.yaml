@@ -3,7 +3,7 @@ name: Pipeline CNE
 on:
   push:
     branches:
-      - workflow-github # Se ejecuta solo cuando hay un push en la rama workflow-github
+      - master # Se ejecuta solo cuando hay un push en la rama master
   schedule:
       - cron: '*/5 * * * *'
 
