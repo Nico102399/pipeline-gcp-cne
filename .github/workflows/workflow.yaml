@@ -5,7 +5,7 @@ on:
     branches:
       - master # Se ejecuta solo cuando hay un push en la rama master
   schedule:
-      - cron: '*/5 * * * *'
+      - cron: '15 * * * *' # Se ejecuta cada hora a los 15 minutos
 
 jobs:
   ejecutar_pipeline:
