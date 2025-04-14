@@ -1,11 +1,8 @@
 name: Pipeline CNE
 
 on:
-  push:
-    branches:
-      - master # Se ejecuta solo cuando hay un push en la rama master
   schedule:
-      - cron: '15 * * * *' # Se ejecuta cada hora a los 15 minutos
+      - cron: '40 * * * *' # Se ejecuta cada hora a los 40 minutos
 
 jobs:
   ejecutar_pipeline:
