@@ -2,7 +2,8 @@ name: Pipeline CNE
 
 on:
   schedule:
-      - cron: '40 * * * *' # Se ejecuta cada hora a los 40 minutos
+    # al minuto 50 de cada hora
+    - cron:  '50 * * * *'
 
 jobs:
   ejecutar_pipeline:
