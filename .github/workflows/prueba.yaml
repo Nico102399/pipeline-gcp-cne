@@ -2,9 +2,8 @@ name: prueba-crono
 
 on:
   schedule:
-    - cron: '5 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
-
 
 jobs:
   my-job:
@@ -12,5 +11,3 @@ jobs:
     steps:
       - name: primer-step
         run: echo "hola mundo"
-        
-    
